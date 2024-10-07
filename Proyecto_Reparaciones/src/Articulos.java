@@ -1,19 +1,32 @@
+import java.util.*;
 
 public class Articulos {
+	String nombreArticulo;
 	int numArticulo;
-	String DniPropietario;
+	ArrayList<Articulos> listaArticulos = new ArrayList<>();
 	
 	public Articulos() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	public Articulos(int numArticulo, String dniPropietario) {
+	
+	
+	public Articulos(int numArticulo , String nombreArticulo) {
 		super();
 		this.numArticulo = numArticulo;
-		DniPropietario = dniPropietario;
+		this.nombreArticulo = nombreArticulo;
 	}
-	
+
+	public String getNombreArticulo() {
+		return nombreArticulo;
+	}
+
+
+	public void setNombreArticulo(String nombreArticulo) {
+		this.nombreArticulo = nombreArticulo;
+	}
+
+
 	public int getNumArticulo() {
 		return numArticulo;
 	}
@@ -22,18 +35,21 @@ public class Articulos {
 		this.numArticulo = numArticulo;
 	}
 	
-	public String getDniPropietario() {
-		return DniPropietario;
-	}
-	
-	public void setDniPropietario(String dniPropietario) {
-		DniPropietario = dniPropietario;
-	}
-	
 	@Override
 	public String toString() {
 		return "Articulos [numArticulo=" + numArticulo + ", DniPropietario=" + DniPropietario + "]";
 	}
 	
+	public void añadirArticulos() {
+		listaArticulos.add(new Articulos(1,"Ordenador"));
+		listaArticulos.add(new Articulos(2,"Telefono"));
+		listaArticulos.add(new Articulos(3,"Television"));
+		listaArticulos.add(new Articulos(4,"Reloj"));
+	}
 	
+	public void mostarArticulos() {
+		for (Articulos articulo : listaArticulos) {
+			articulo.toString();
+		}
+	}
 }
