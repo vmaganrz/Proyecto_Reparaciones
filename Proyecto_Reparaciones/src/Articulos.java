@@ -37,7 +37,7 @@ public class Articulos {
 	
 	@Override
 	public String toString() {
-		return "Articulos [numArticulo=" + numArticulo + ", DniPropietario=" + DniPropietario + "]";
+		return "Articulos [numArticulo=" + numArticulo + "]";
 	}
 	
 	public void añadirArticulos() {
