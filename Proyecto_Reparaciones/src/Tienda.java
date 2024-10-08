@@ -6,22 +6,18 @@ import java.util.ArrayList;
 public class Tienda {
 	public static void main(String[] args) throws IOException {
 		  // Crear una lista de artículos
-        ArrayList<Articulos> listaArticulos = new ArrayList<>();
-        listaArticulos.add(new Articulos(1, "Ordenador"));
-        listaArticulos.add(new Articulos(2, "Teléfono"));
+		CreacionFicheros.cargarArticulos();
 
         // Crear una lista de reparaciones
-        ArrayList<Reparaciones> listaReparaciones = new ArrayList<>();
-        listaReparaciones.add(new Reparaciones(1, 1, 100, "Cambio de pantalla"));
-        listaReparaciones.add(new Reparaciones(2, 2, 50, "Reparación de batería"));
-
+        CreacionFicheros.cargarReparaciones();
+       
         // Crear instancias de las clases de escritura y lectura
         CreacionFicheros escritura = new CreacionFicheros();
         LecturaFicheros lectura = new LecturaFicheros();
 
         // Escritura de archivos
-        escritura.escribirArticulosTexto(listaArticulos, "articulos.txt");
-        escritura.escribirReparacionesTexto(listaReparaciones, "reparaciones.txt");
+        escritura.escribirArticulosTexto(CreacionFicheros.cargarArticulos(), "articulos.txt");
+        escritura.escribirReparacionesTexto(CreacionFicheros.cargarReparaciones(), "reparaciones.txt");
 
         // Lectura de archivos
         lectura.leerArticulos("articulos.txt");

@@ -1,0 +1,2 @@
+Reparaciones [numReparacion=1, numArticulo=1, precioRepariones=100€, descripcion=Cambio de pantalla]
+Reparaciones [numReparacion=2, numArticulo=2, precioRepariones=50€, descripcion=Reparación de batería]

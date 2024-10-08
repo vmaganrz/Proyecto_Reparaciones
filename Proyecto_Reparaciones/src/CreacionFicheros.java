@@ -22,7 +22,6 @@ public class CreacionFicheros {
 	        writer.close();
 	        System.out.println("Archivo de reparaciones guardado en texto correctamente.");
 	    }
-
 	
 	public static void EscribirFicheroBinario(String fich) throws IOException {
 		
@@ -47,7 +46,24 @@ public class CreacionFicheros {
 		 dataOS.close(); 
 		
 	}
+
+	public static ArrayList<Articulos> cargarArticulos() {
+		// TODO Auto-generated method stub
+        ArrayList<Articulos> listaArticulos = new ArrayList<>();
+        listaArticulos.add(new Articulos(1, "Ordenador"));
+        listaArticulos.add(new Articulos(2, "Teléfono"));
+        listaArticulos.add(new Articulos(3, "Television"));
+        listaArticulos.add(new Articulos(4, "Reloj"));
+		return listaArticulos;
+	}
 	
+	public static ArrayList<Reparaciones> cargarReparaciones() {
+		// TODO Auto-generated method stub
+        ArrayList<Reparaciones> listaReparaciones = new ArrayList<>();
+        listaReparaciones.add(new Reparaciones(1, 1, 100, "Cambio de pantalla"));
+        listaReparaciones.add(new Reparaciones(2, 2, 50, "Reparación de batería"));
+		return listaReparaciones;
+	}
 }
 	
 	
