@@ -1,0 +1,2 @@
+Articulos [nombreArticulo=Ordenador, numArticulo=1]
+Articulos [nombreArticulo=Teléfono, numArticulo=2]

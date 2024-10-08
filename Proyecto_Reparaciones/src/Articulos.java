@@ -3,7 +3,6 @@ import java.util.*;
 public class Articulos {
 	String nombreArticulo;
 	int numArticulo;
-	ArrayList<Articulos> listaArticulos = new ArrayList<>();
 	
 	public Articulos() {
 		super();
@@ -37,19 +36,8 @@ public class Articulos {
 	
 	@Override
 	public String toString() {
-		return "Articulos [numArticulo=" + numArticulo + "]";
+		return "Articulos [nombreArticulo=" + nombreArticulo + ", numArticulo=" + numArticulo + "]";
 	}
 	
-	public void añadirArticulos() {
-		listaArticulos.add(new Articulos(1,"Ordenador"));
-		listaArticulos.add(new Articulos(2,"Telefono"));
-		listaArticulos.add(new Articulos(3,"Television"));
-		listaArticulos.add(new Articulos(4,"Reloj"));
-	}
 	
-	public void mostarArticulos() {
-		for (Articulos articulo : listaArticulos) {
-			articulo.toString();
-		}
-	}
 }

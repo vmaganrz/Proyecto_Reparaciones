@@ -1,4 +1,3 @@
-
 public class Reparaciones {
 	int numReparacion;
 	int numArticulo;
@@ -53,7 +52,7 @@ public class Reparaciones {
 	@Override
 	public String toString() {
 		return "Reparaciones [numReparacion=" + numReparacion + ", numArticulo=" + numArticulo + ", precioRepariones="
-				+ precioRepariones + ", descripcion=" + descripcion + "]";
+				+ precioRepariones + "€" + ", descripcion=" + descripcion + "]";
 	}
 	
 	
