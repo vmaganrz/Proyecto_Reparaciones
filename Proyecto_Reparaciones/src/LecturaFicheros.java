@@ -65,7 +65,7 @@ public class LecturaFicheros {
 	        System.out.println("ID: " + n + ", Tipo: " + e);        
 	    }
 	    }catch (EOFException eo) {
-	    	System.out.println("Fin de lectura");
+	    	System.out.println("Fin");
 	    }
 		
 	   dataIS.close();  
