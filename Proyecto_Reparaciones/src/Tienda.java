@@ -28,12 +28,13 @@ public class Tienda {
         }
         System.out.println("Escritura DE FICHERO XML:");
         
-        
+        /*
         CrearArticuloXML escrituraXML = new CrearArticuloXML();
         escrituraXML.creacionFicheroXML();
         
+        SOLUCIONAR ERROR
         
-       
+        */
 
         System.out.println("LECTURA DE FICHERO XML:");
 
