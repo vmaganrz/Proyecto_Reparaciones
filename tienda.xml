@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tienda>
+    <Articulos>
+        <articulo>
+            <num_articulo>1</num_articulo>
+            <nombre_articulo>Ordenador</nombre_articulo>
+        </articulo>
+        <articulo>
+            <num_articulo>2</num_articulo>
+            <nombre_articulo>Teléfono</nombre_articulo>
+        </articulo>
+        <articulo>
+            <num_articulo>3</num_articulo>
+            <nombre_articulo>Televisión</nombre_articulo>
+        </articulo>
+        <articulo>
+            <num_articulo>4</num_articulo>
+            <nombre_articulo>Reloj</nombre_articulo>
+        </articulo>
+    </Articulos>
+    
+    <Reparaciones>
+        <reparacion>
+            <num_reparacion>1</num_reparacion>
+            <num_articulo>1</num_articulo>
+            <precio_reparacion>100</precio_reparacion>
+            <descripcion>Cambio de pantalla</descripcion>
+        </reparacion>
+        <reparacion>
+            <num_reparacion>2</num_reparacion>
+            <num_articulo>2</num_articulo>
+            <precio_reparacion>50</precio_reparacion>
+            <descripcion>Reparación de batería</descripcion>
+        </reparacion>
+        <reparacion>
+            <num_reparacion>3</num_reparacion>
+            <num_articulo>2</num_articulo>
+            <precio_reparacion>50</precio_reparacion>
+            <descripcion>Problemas de conexión</descripcion>
+        </reparacion>
+        <reparacion>
+            <num_reparacion>4</num_reparacion>
+            <num_articulo>2</num_articulo>
+            <precio_reparacion>50</precio_reparacion>
+            <descripcion>Cristal roto</descripcion>
+        </reparacion>
+    </Reparaciones>
+</Tienda>

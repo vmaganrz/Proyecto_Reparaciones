@@ -62,6 +62,8 @@ public class CreacionFicheros {
         ArrayList<Reparaciones> listaReparaciones = new ArrayList<>();
         listaReparaciones.add(new Reparaciones(1, 1, 100, "Cambio de pantalla"));
         listaReparaciones.add(new Reparaciones(2, 2, 50, "Reparación de batería"));
+        listaReparaciones.add(new Reparaciones(3, 2, 50, "Problemas de conexión"));
+        listaReparaciones.add(new Reparaciones(4, 2, 50, "Cristal roto"));
 		return listaReparaciones;
 	}
 }

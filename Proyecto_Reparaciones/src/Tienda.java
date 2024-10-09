@@ -1,16 +1,13 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Tienda {
-	public static void main(String[] args) throws IOException {
-		  // Crear una lista de artículos
-		CreacionFicheros.cargarArticulos();
+    public static void main(String[] args) throws IOException {
+        // Crear una lista de artículos
+        CreacionFicheros.cargarArticulos();
 
         // Crear una lista de reparaciones
         CreacionFicheros.cargarReparaciones();
-       
+
         // Crear instancias de las clases de escritura y lectura
         CreacionFicheros escritura = new CreacionFicheros();
         LecturaFicheros lectura = new LecturaFicheros();
@@ -22,15 +19,17 @@ public class Tienda {
         // Lectura de archivos
         lectura.leerArticulos("articulos.txt");
         lectura.leerReparaciones("reparaciones.txt");
-        
+
         try {
-        	 escritura.EscribirFicheroBinario("articulos.dat"); 
-             lectura.LecturaFicheroBinario("articulos.dat");
+            escritura.EscribirFicheroBinario("articulos.dat");
+            lectura.LecturaFicheroBinario("articulos.dat");
         } catch (IOException e) {
             e.printStackTrace();
         }
-   
-        
-        
-	}
+
+        System.out.println("LECTURA DE FICHERO XML:");
+
+        LecturaTiendaXml lecturaXML = new LecturaTiendaXml();
+        lecturaXML.leerXML("tienda.xml");
+    }
 }

@@ -1,2 +1,4 @@
 Articulos [nombreArticulo=Ordenador, numArticulo=1]
 Articulos [nombreArticulo=Teléfono, numArticulo=2]
+Articulos [nombreArticulo=Television, numArticulo=3]
+Articulos [nombreArticulo=Reloj, numArticulo=4]
