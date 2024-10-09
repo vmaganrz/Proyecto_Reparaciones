@@ -7,11 +7,11 @@ public class LecturaTiendaXml {
 
     // Método para leer y procesar el archivo XML
     public void leerXML(String archivo) {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 
         try {
             // Crear un DocumentBuilder
-            DocumentBuilder builder = factory.newDocumentBuilder();
+            DocumentBuilder builder = docFactory.newDocumentBuilder();
             // Parsear el archivo XML
             Document document = builder.parse(new File(archivo));
             document.getDocumentElement().normalize(); // Normaliza el documento
