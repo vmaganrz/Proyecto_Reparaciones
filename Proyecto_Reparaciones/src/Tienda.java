@@ -26,10 +26,18 @@ public class Tienda {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("Escritura DE FICHERO XML:");
+        
+        /*
+        CrearArticuloXML escrituraXML = new CrearArticuloXML();
+        escrituraXML.creacionFicheroXML();
+        
+        
+        /*
 
         System.out.println("LECTURA DE FICHERO XML:");
 
         LecturaTiendaXml lecturaXML = new LecturaTiendaXml();
-        lecturaXML.leerXML("tienda.xml");
+        lecturaXML.leerXML("tienda.xml"); */
     }
 }
