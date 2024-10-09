@@ -28,16 +28,16 @@ public class Tienda {
         }
         System.out.println("Escritura DE FICHERO XML:");
         
-        /*
+        
         CrearArticuloXML escrituraXML = new CrearArticuloXML();
         escrituraXML.creacionFicheroXML();
         
         
-        /*
+       
 
         System.out.println("LECTURA DE FICHERO XML:");
 
         LecturaTiendaXml lecturaXML = new LecturaTiendaXml();
-        lecturaXML.leerXML("tienda.xml"); */
+        lecturaXML.leerXML("tienda.xml");
     }
 }
