@@ -40,9 +40,16 @@ public class Tienda {
 
         LecturaTiendaXml lecturaXML = new LecturaTiendaXml();
         lecturaXML.leerXML("tienda.xml");
-        
-        System.out.println("\nElemento borrardo");
         EditarXML_CRUD crud = new EditarXML_CRUD();
-        crud.borrar();
+        System.out.println("Articulo encontrado: ");
+        crud.buscar(1);
+        /*
+
+        System.out.println("\nElemento creado");
+        crud.crear();// Crear un articulo de personas
+        System.out.println("\nElemento borrardo");
+        crud.borrar();// Borrar segunto articulo
+        System.out.println("\nElemento editado");
+        crud.editar(); // Añadir atributo a el primer articulo*/
     }
 }
