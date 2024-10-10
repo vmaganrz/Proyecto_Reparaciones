@@ -1,7 +1,7 @@
 public class Reparaciones {
 	int numReparacion;
 	int numArticulo;
-	int precioRepariones;
+	int precioReparaciones;
 	String descripcion;
 	
 	public Reparaciones() {
@@ -9,11 +9,11 @@ public class Reparaciones {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Reparaciones(int numReparacion, int numArticulo, int precioRepariones, String descripcion) {
+	public Reparaciones(int numReparacion, int numArticulo, int precioReparaciones, String descripcion) {
 		super();
 		this.numReparacion = numReparacion;
 		this.numArticulo = numArticulo;
-		this.precioRepariones = precioRepariones;
+		this.precioReparaciones = precioReparaciones;
 		this.descripcion = descripcion;
 	}
 	
@@ -34,11 +34,11 @@ public class Reparaciones {
 	}
 	
 	public int getPrecioRepariones() {
-		return precioRepariones;
+		return precioReparaciones;
 	}
 	
 	public void setPrecioRepariones(int precioRepariones) {
-		this.precioRepariones = precioRepariones;
+		this.precioReparaciones = precioRepariones;
 	}
 	
 	public String getDescripcion() {
@@ -52,7 +52,7 @@ public class Reparaciones {
 	@Override
 	public String toString() {
 		return "Reparaciones [numReparacion=" + numReparacion + ", numArticulo=" + numArticulo + ", precioRepariones="
-				+ precioRepariones + "€" + ", descripcion=" + descripcion + "]";
+				+ precioReparaciones + "€" + ", descripcion=" + descripcion + "]";
 	}
 	
 	
