@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 public class Tienda {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         // Crear una lista de artículos
         CreacionFicheros.cargarArticulos();
 
@@ -36,9 +36,13 @@ public class Tienda {
         
         */
 
-        System.out.println("LECTURA DE FICHERO XML:");
+        System.out.println("\nLECTURA DE FICHERO XML:");
 
         LecturaTiendaXml lecturaXML = new LecturaTiendaXml();
         lecturaXML.leerXML("tienda.xml");
+        
+        System.out.println("\nElemento borrardo");
+        EditarXML_CRUD crud = new EditarXML_CRUD();
+        crud.borrar();
     }
 }
